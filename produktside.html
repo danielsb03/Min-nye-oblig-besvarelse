@@ -5,13 +5,19 @@
         <meta name="description" content="Lightgear's shoes prioritise those who party alot and work alot">
         <meta name="author" content="Daniel-Betto">
         <meta charset="UTF-8">
-         <title>ShoeName|Lightgear</title>
+        <!--Her er min versjon av facebook-->
+        <meta property="og:title" content="Lightgear sin pensko produkt">
+        <meta property="og:description" content="Lightgear fokuserer på fest elskere og jobb avhengige folk som trenger seg nye sko!">
+        <meta property="og:image" content="https://itstud.hiof.no/~danielsb/oblig_3-daniesb/img/lightgear.png">
+        <meta property="og:url" content="https://itstud.hiof.no/~danielsb/oblig_3-daniesb/produktside.html">
+        <!--Her slutter det-->
          <link rel="stylesheet" href="css/font/css/fontawesome.css">
          <link rel="stylesheet" href="css/font/css/brands.css">
          <link rel="stylesheet" href="css/font/css/solid.css">
          <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
          <link href="css/style.css" rel="stylesheet" type="text/css">
-         
+          <title>ShoeName|Lightgear</title>
+
     </head>
     <body>
         <div class="grid-container">
@@ -56,32 +62,50 @@
                 </ul>
             </nav>
                 </div>
-                </div>
+                
             
         </header>
             
         
                 
-                <main id="mid-main">
-                <ul>
-                    <li >
-                        <a id="home" href="index.html" aria-label="This brings you back to homepage">Home</a></li>
-                        <li class="men"> Men</li>
-                        <li id="mens"> All Men's</li>
-                </ul>
+                <main id="mid-main" itemscope itemtype="https://schema.org/Product">
+                    <nav id="breadcrumbs">
+                <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a id="home" itemprop="item" href="index.html" aria-label="This brings you back to homepage">
+                            <span itemprop="name"> Home</span>
+                            </a>
+                            <meta itemprop="position" content="1">
+                        </li>
 
+                        <li class="men" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a itemprop="item" href="#" aria-label="This brings you back to men page">
+                            <span itemprop="name">Men</span>
+                            </a> 
+                            <meta itemprop="position" content="2">
+                        </li>
+                        <li id="mens" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a itemprop="item" href="#" aria-label="This brings you back to All mens">
+                            <span itemprop="name">Shoename</span>
+                        </a>
+                        <meta itemprop="position" content="3">
+                        </li>
+
+                </ul>
+</nav>
                 <section>
                     <article>
-                        <h1>
-                            "Shoe name"
-                        </h1>
-                        <h2>kr 239,-</h2>
+                        <h1 itemprop="name">"Shoe name"</h1>
+                        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <meta itemprop="priceCurrency" content="NOK">
+                        <h2 itemprop="price" content="239.00">kr 239,-</h2>
+                        </div>
                         <h3>
                             size 42
                         </h3>
                     </article>
                     <article>
-                        <img src="img/nikebigshoe.jpg" alt="Picture of green shoes">
+                        <img src="img/nikebigshoe.jpg" alt="Picture of green shoes" itemprop="image">
 
                         <a href="#" aria-label="add to cart">ADD TO CART</a>
                     </article>

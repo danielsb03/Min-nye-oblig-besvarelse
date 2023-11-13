@@ -5,7 +5,7 @@
     margin:0;
     padding:0;
     font-family: JetBrains Mono, sans-serif;
-    font-size:calc(1vw + 4)
+  
 
 }
 .grid-container {
@@ -64,14 +64,10 @@ label span{
     white-space: nowrap;
 }
 
-label{
-    color: white;
-}
-
 
 input{
     width: 100%;
-    
+ 
     display:block;
     border-radius: 25px;
     font-size: 20px;
@@ -604,32 +600,6 @@ img{
     top: 4rem;
      left: -9rem;
 }
-#darkgrey{
-    background-color: #838383;  
- }
- table{
-    width:45rem;
-   
-}
-table th{
-    border: #000 5px solid;
-    font-size: 2em;
-   
-    width: 0px;
-}
-#seo-uu{
-    
-    width:45rem;
-    border: #000 solid 2px;
-}
-
-#seo-uu th{
-    margin-right:0.5rem;
-    border: #000 5px solid;
-    font-size: 2em;
-    
-    background-color: #c9c9c9 ;
-}
 @media only screen and (max-width:850px) { /*Media quier er her <-------------------------------------------*/
     .grid-container {
     display: grid;
@@ -866,7 +836,7 @@ table th{
     font-size:em;
     background-color: #aeaeae;
 }
-#seo-uu{ 
+#seo-uu td{
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
